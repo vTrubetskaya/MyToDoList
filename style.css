@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    background-color: rgba(128, 128, 128, 0.17);
+}
+
+.todolist__wrapper {
+    margin: 0 auto;
+    max-width: 40%; 
+    
+    background-color: snow;   
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(139, 138, 138);
+}
+
+.todolist__header {
+    padding: 10px;
+    text-align: center;        
+    
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(255, 94, 86);
+}
+
+.todolist__title {
+    margin-bottom: 10px;
+
+    color: snow;
+    font-size: 30px;
+}
+
+.todolist__input {
+    width: 100%;
+    height: 25px;
+
+    border: none;
+    border-radius: 7px;
+    opacity: .85;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.todolist__content {    
+    border-radius: 0px 0px 10px 10px;
+    background-color: snow;
+}
+
+.todolist_items {
+    margin: 15px;
+    
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+}
+
+.todolist_item {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-bottom: 18px;
+    padding: 10px;
+
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(139, 138, 138, 0.5);   
+}
+
+.todolist__task {
+    padding-left: 5px;
+    width: 100%;
+
+    font-size: 25px;    
+}
+
+.todolist__task input[type='checkbox'] {
+    accent-color: rgb(255, 94, 86);
+}
+
+.todolist_item .btn {
+    margin-top: 10px;
+    margin-right: 13px;
+    padding: 5px;
+    width: 25%;
+
+    background-color: transparent;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 0 5px rgba(139, 138, 138, 0.5);
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.todolist_item .btn:hover {
+    background-color: rgba(139, 138, 138, 0.3);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_wrapper {
+    min-height: 15%;
+    min-width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 7px;
+    background-color: rgb(255, 94, 86);    
+}
+
+.modal_wrapper h2 {
+    padding-bottom: 10px;
+
+    color: snow;
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.input__edit {
+    width: 100%;
+    height: 25px;
+
+    border: none;
+    border-radius: 5px;
+    opacity: .85;
+
+    text-align: center;
+    font-size: 18px;
+    color: rgb(44, 44, 44);
+}
+
+.modal__save {
+    align-self: center;
+    margin-top: 30px;
+    padding: 5px;
+    width: 45%;
+
+    background-color: transparent;
+    border-radius: 4px;
+    border: .5px solid rgba(255, 250, 250, 0.5);
+    cursor: pointer;
+
+    font-size: 15px;
+    color: snow;
+}
+
+.modal__save:hover {
+    background-color: rgba(255, 250, 250, 0.4);
+}
+
+.done{
+    color: rgb(255, 94, 86, .5);
+    text-decoration: line-through;
+}
